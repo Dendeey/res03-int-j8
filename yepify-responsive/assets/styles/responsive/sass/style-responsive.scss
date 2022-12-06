@@ -2,7 +2,7 @@
 
 @media(max-width : 768px) // HOME PAGE
 {
-    body
+    #home-body
     {
         font-family: 'JetBrains Mono', monospace;
         width: 100vw;
@@ -59,6 +59,7 @@
             section:first-of-type
             {    
                 margin: auto;
+                width: 50vw;
                 
                 h1
                 {
@@ -82,7 +83,7 @@
                 background: $neonPurple;
                 border-radius: 0.2em;
                 height: 64vh;
-                width: 22vw;
+                width: 32vw;
                 
                 header
                 {
@@ -169,7 +170,7 @@
 
 @media(min-width : 769px) // HOME PAGE
 {
-    body
+    #home-body
     {
         font-family: 'JetBrains Mono', monospace;
         width: 100vw;
@@ -338,10 +339,7 @@
     {
         font-family: 'JetBrains Mono', monospace;
         width: 100vw;
-        height: 100vh;
         background: $gradient-bottom;
-        margin: 0;
-        padding: 0;
         overflow-x: hidden;
         
         & > header
@@ -350,10 +348,11 @@
             height: 10vh;
             display: grid;
             grid-template-columns: 2fr 1fr;
-            border-bottom: 0.1em solid $neonBlue;
+            /*border-bottom: 0.1em solid $neonBlue;*/
             
             nav
             {
+                display: none;
                 grid-column: 1 / 2;
             
                 
@@ -388,14 +387,18 @@
             header
             {
                 margin: auto;
+                padding-top: 0;
+                width: 40vw;
+                text-align: center;
                 
                 h1
                 {
+                    margin:auto;
                     text-align: center;
                     font-size: 3em;
                     font-weight: bold;
                     color: white;
-                    padding-top: 0.3em;
+                    padding-top: 0;
                 }
             }
             
@@ -403,12 +406,14 @@
             {    
                 margin: 2em 8em 4em 8em;
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
                 
                 #basic
                 {
-                    grid-column: 1 / 2;
-                    margin: 2.9em 0 0 2em;
+        
+                    grid-row: 2 / 3;
+                    margin: 2em 4em 2em 4em;
                     display: grid;
                     grid-template-rows: 1fr 2fr ;
                     background-color: white;
@@ -460,8 +465,8 @@
                 
                 #premium
                 {
-                    grid-column: 2 / 3;
-                    margin: 0;
+                    grid-row: 1 / 2;
+                    margin: 2em 4em 2em 4em;
                     display: grid;
                     grid-template-rows: 1fr 2fr ;
                     background-color: white;
@@ -510,8 +515,8 @@
                 
                 #pro
                 {
-                    grid-column: 3 / 4;
-                    margin: 2.9em 2em 0 0;
+                    grid-row: 3 / 4;
+                    margin: 2em 4em 2em 4em;
                     display: grid;
                     grid-template-rows: 1fr 2fr ;
                     background-color: white;
