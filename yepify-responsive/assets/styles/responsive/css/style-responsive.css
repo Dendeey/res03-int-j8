@@ -1,0 +1,568 @@
+@media (max-width: 768px) {
+  body {
+    font-family: "JetBrains Mono", monospace;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  body > header {
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /*border-bottom: 0.1em solid $neonBlue;*/
+  }
+  body > header nav {
+    display: none;
+    grid-column: 1/2;
+  }
+  body > header nav ul {
+    margin-top: 1.2em;
+    padding: 0;
+  }
+  body > header nav ul li {
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    margin-left: 25%;
+    font-weight: bold;
+  }
+  body > header nav ul span {
+    text-transform: uppercase;
+  }
+  body > main {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 88vh;
+  }
+  body > main section:first-of-type {
+    margin: auto;
+  }
+  body > main section:first-of-type h1 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+  body > main section:first-of-type span {
+    font-size: 2.5em;
+  }
+  body > main section:last-of-type {
+    margin: auto;
+    background: #5e60ce;
+    border-radius: 0.2em;
+    height: 64vh;
+    width: 22vw;
+  }
+  body > main section:last-of-type header {
+    margin: auto;
+    padding-left: 0.5em;
+    border-bottom: 0.1em solid #64dfdf;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  body > main section:last-of-type header h2 {
+    color: white;
+    font-size: 1em;
+    margin-left: 0.5em;
+  }
+  body > main section:last-of-type header span:first-of-type {
+    color: #7400b8;
+  }
+  body > main section:last-of-type header span:last-of-type {
+    color: #64dfdf;
+  }
+  body > main section:last-of-type header figure {
+    grid-column: 2/3;
+    margin: auto;
+    padding: 0;
+  }
+  body > main section:last-of-type header figure img {
+    height: 8vh;
+    margin-top: 0.8em;
+    margin-right: 1.5em;
+  }
+  body > main section:last-of-type ul {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    margin-top: 1em;
+    padding: 0;
+    list-style: none;
+  }
+  body > main section:last-of-type ul li {
+    margin: 0.8em;
+    padding-left: 0;
+    color: white;
+    font-size: 0.8em;
+    border-bottom: solid 0.1em #006466;
+    align-self: center;
+  }
+  body > main section:last-of-type ul li:last-of-type {
+    border-bottom: none;
+  }
+  body > main section:last-of-type ul span {
+    font-size: 1.3em;
+    padding-left: 0.6em;
+  }
+  body > main section:last-of-type ul img {
+    height: 3vh;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    font-family: "JetBrains Mono", monospace;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  body > header {
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 0.1em solid #64dfdf;
+  }
+  body > header nav {
+    grid-column: 1/2;
+  }
+  body > header nav ul {
+    margin-top: 1.2em;
+    padding: 0;
+  }
+  body > header nav ul li {
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    margin-left: 25%;
+    font-weight: bold;
+  }
+  body > header nav ul span {
+    text-transform: uppercase;
+  }
+  body > main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 88vh;
+  }
+  body > main section:first-of-type {
+    margin: auto;
+  }
+  body > main section:first-of-type h1 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: auto;
+    padding: 0;
+  }
+  body > main section:first-of-type span {
+    font-size: 2.5em;
+  }
+  body > main section:last-of-type {
+    margin: auto;
+    background: #5e60ce;
+    border-radius: 0.2em;
+    height: 64vh;
+    width: 22vw;
+  }
+  body > main section:last-of-type header {
+    margin: auto;
+    padding-left: 0.5em;
+    border-bottom: 0.1em solid #64dfdf;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  body > main section:last-of-type header h2 {
+    color: white;
+    font-size: 1em;
+    margin-left: 0.5em;
+  }
+  body > main section:last-of-type header span:first-of-type {
+    color: #7400b8;
+  }
+  body > main section:last-of-type header span:last-of-type {
+    color: #64dfdf;
+  }
+  body > main section:last-of-type header figure {
+    grid-column: 2/3;
+    margin: auto;
+    padding: 0;
+  }
+  body > main section:last-of-type header figure img {
+    height: 8vh;
+    margin-top: 0.8em;
+    margin-right: 1.5em;
+  }
+  body > main section:last-of-type ul {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    margin-top: 1em;
+    padding: 0;
+    list-style: none;
+  }
+  body > main section:last-of-type ul li {
+    margin: 0.8em;
+    padding-left: 0;
+    color: white;
+    font-size: 0.8em;
+    border-bottom: solid 0.1em #006466;
+    align-self: center;
+  }
+  body > main section:last-of-type ul li:last-of-type {
+    border-bottom: none;
+  }
+  body > main section:last-of-type ul span {
+    font-size: 1.3em;
+    padding-left: 0.6em;
+  }
+  body > main section:last-of-type ul img {
+    height: 3vh;
+  }
+}
+@media (max-width: 768px) {
+  #pricing-body {
+    font-family: "JetBrains Mono", monospace;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #272640, #43006b, #7400b8, #6930c3, #5e60ce, #5390d9);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  #pricing-body > header {
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 0.1em solid #64dfdf;
+  }
+  #pricing-body > header nav {
+    grid-column: 1/2;
+  }
+  #pricing-body > header nav ul {
+    margin-top: 1.2em;
+    padding: 0;
+  }
+  #pricing-body > header nav ul li {
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    margin-left: 25%;
+    font-weight: bold;
+  }
+  #pricing-body > header nav ul span {
+    text-transform: uppercase;
+  }
+  #pricing-body > main {
+    height: 84vh;
+  }
+  #pricing-body > main header {
+    margin: auto;
+  }
+  #pricing-body > main header h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    padding-top: 0.3em;
+  }
+  #pricing-body > main #mainSection {
+    margin: 2em 8em 4em 8em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #pricing-body > main #mainSection #basic {
+    grid-column: 1/2;
+    margin: 2.9em 0 0 2em;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: white;
+    border-right: solid 1px #118ab2;
+  }
+  #pricing-body > main #mainSection #basic header {
+    background-color: #118ab2;
+    grid-row: 1/2;
+    width: 100%;
+    margin-top: 0;
+  }
+  #pricing-body > main #mainSection #basic header h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  #pricing-body > main #mainSection #basic ul {
+    margin-top: 1em;
+    margin-left: 1em;
+    grid-row: 2/3;
+    padding-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  #pricing-body > main #mainSection #basic ul li {
+    padding-left: 0;
+    padding-bottom: 1em;
+    color: black;
+    font-size: 0.8em;
+  }
+  #pricing-body > main #mainSection #basic footer {
+    color: #118ab2;
+    text-align: center;
+    font-weight: bold;
+  }
+  #pricing-body > main #mainSection #premium {
+    grid-column: 2/3;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: white;
+  }
+  #pricing-body > main #mainSection #premium header {
+    background-color: #118ab2;
+    grid-row: 1/2;
+    width: 100%;
+    margin-top: 0;
+  }
+  #pricing-body > main #mainSection #premium header h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  #pricing-body > main #mainSection #premium ul {
+    margin-top: 1em;
+    margin-left: 1em;
+    grid-row: 2/3;
+    padding-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  #pricing-body > main #mainSection #premium ul li {
+    padding-left: 0;
+    padding-bottom: 1em;
+    color: black;
+    font-size: 0.8em;
+  }
+  #pricing-body > main #mainSection #premium footer {
+    color: #118ab2;
+    text-align: center;
+    font-weight: bold;
+  }
+  #pricing-body > main #mainSection #pro {
+    grid-column: 3/4;
+    margin: 2.9em 2em 0 0;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: white;
+    border-left: solid 1px #118ab2;
+  }
+  #pricing-body > main #mainSection #pro header {
+    background-color: #118ab2;
+    grid-row: 1/2;
+    width: 100%;
+    margin-top: 0;
+  }
+  #pricing-body > main #mainSection #pro header h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  #pricing-body > main #mainSection #pro ul {
+    margin-top: 1em;
+    margin-left: 1em;
+    grid-row: 2/3;
+    padding-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  #pricing-body > main #mainSection #pro ul li {
+    padding-left: 0;
+    padding-bottom: 1em;
+    color: black;
+    font-size: 0.8em;
+  }
+  #pricing-body > main #mainSection #pro footer {
+    color: #118ab2;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+@media (min-width: 769px) {
+  #pricing-body {
+    font-family: "JetBrains Mono", monospace;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #272640, #43006b, #7400b8, #6930c3, #5e60ce, #5390d9);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  #pricing-body > header {
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 0.1em solid #64dfdf;
+  }
+  #pricing-body > header nav {
+    grid-column: 1/2;
+  }
+  #pricing-body > header nav ul {
+    margin-top: 1.2em;
+    padding: 0;
+  }
+  #pricing-body > header nav ul li {
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    margin-left: 25%;
+    font-weight: bold;
+  }
+  #pricing-body > header nav ul span {
+    text-transform: uppercase;
+  }
+  #pricing-body > main {
+    height: 84vh;
+  }
+  #pricing-body > main header {
+    margin: auto;
+  }
+  #pricing-body > main header h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    padding-top: 0.3em;
+  }
+  #pricing-body > main #mainSection {
+    margin: 2em 8em 4em 8em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #pricing-body > main #mainSection #basic {
+    grid-column: 1/2;
+    margin: 2.9em 0 0 2em;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: white;
+    border-right: solid 1px #118ab2;
+  }
+  #pricing-body > main #mainSection #basic header {
+    background-color: #118ab2;
+    grid-row: 1/2;
+    width: 100%;
+    margin-top: 0;
+  }
+  #pricing-body > main #mainSection #basic header h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  #pricing-body > main #mainSection #basic ul {
+    margin-top: 1em;
+    margin-left: 1em;
+    grid-row: 2/3;
+    padding-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  #pricing-body > main #mainSection #basic ul li {
+    padding-left: 0;
+    padding-bottom: 1em;
+    color: black;
+    font-size: 0.8em;
+  }
+  #pricing-body > main #mainSection #basic footer {
+    color: #118ab2;
+    text-align: center;
+    font-weight: bold;
+  }
+  #pricing-body > main #mainSection #premium {
+    grid-column: 2/3;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: white;
+  }
+  #pricing-body > main #mainSection #premium header {
+    background-color: #118ab2;
+    grid-row: 1/2;
+    width: 100%;
+    margin-top: 0;
+  }
+  #pricing-body > main #mainSection #premium header h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  #pricing-body > main #mainSection #premium ul {
+    margin-top: 1em;
+    margin-left: 1em;
+    grid-row: 2/3;
+    padding-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  #pricing-body > main #mainSection #premium ul li {
+    padding-left: 0;
+    padding-bottom: 1em;
+    color: black;
+    font-size: 0.8em;
+  }
+  #pricing-body > main #mainSection #premium footer {
+    color: #118ab2;
+    text-align: center;
+    font-weight: bold;
+  }
+  #pricing-body > main #mainSection #pro {
+    grid-column: 3/4;
+    margin: 2.9em 2em 0 0;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: white;
+    border-left: solid 1px #118ab2;
+  }
+  #pricing-body > main #mainSection #pro header {
+    background-color: #118ab2;
+    grid-row: 1/2;
+    width: 100%;
+    margin-top: 0;
+  }
+  #pricing-body > main #mainSection #pro header h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  #pricing-body > main #mainSection #pro ul {
+    margin-top: 1em;
+    margin-left: 1em;
+    grid-row: 2/3;
+    padding-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  #pricing-body > main #mainSection #pro ul li {
+    padding-left: 0;
+    padding-bottom: 1em;
+    color: black;
+    font-size: 0.8em;
+  }
+  #pricing-body > main #mainSection #pro footer {
+    color: #118ab2;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+/*# sourceMappingURL=style-responsive.css.map */

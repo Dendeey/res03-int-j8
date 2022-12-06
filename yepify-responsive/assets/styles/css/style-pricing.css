@@ -1,0 +1,173 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #272640, #43006b, #7400b8, #6930c3, #5e60ce, #5390d9);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body > header {
+  width: 100vw;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-bottom: 0.1em solid #64dfdf;
+}
+body > header nav {
+  grid-column: 1/2;
+}
+body > header nav ul {
+  margin-top: 1.2em;
+  padding: 0;
+}
+body > header nav ul li {
+  display: inline-block;
+  color: white;
+  font-size: 1em;
+  margin-left: 25%;
+  font-weight: bold;
+}
+body > header nav ul span {
+  text-transform: uppercase;
+}
+body > main {
+  height: 84vh;
+}
+body > main header {
+  margin: auto;
+}
+body > main header h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  padding-top: 0.3em;
+}
+body > main #mainSection {
+  margin: 2em 8em 4em 8em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body > main #mainSection #basic {
+  grid-column: 1/2;
+  margin: 2.9em 0 0 2em;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  background-color: white;
+  border-right: solid 1px #118ab2;
+}
+body > main #mainSection #basic header {
+  background-color: #118ab2;
+  grid-row: 1/2;
+  width: 100%;
+  margin-top: 0;
+}
+body > main #mainSection #basic header h2 {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+body > main #mainSection #basic ul {
+  margin-top: 1em;
+  margin-left: 1em;
+  grid-row: 2/3;
+  padding-top: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+body > main #mainSection #basic ul li {
+  padding-left: 0;
+  padding-bottom: 1em;
+  color: black;
+  font-size: 0.8em;
+}
+body > main #mainSection #basic footer {
+  color: #118ab2;
+  text-align: center;
+  font-weight: bold;
+}
+body > main #mainSection #premium {
+  grid-column: 2/3;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  background-color: white;
+}
+body > main #mainSection #premium header {
+  background-color: #118ab2;
+  grid-row: 1/2;
+  width: 100%;
+  margin-top: 0;
+}
+body > main #mainSection #premium header h2 {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+body > main #mainSection #premium ul {
+  margin-top: 1em;
+  margin-left: 1em;
+  grid-row: 2/3;
+  padding-top: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+body > main #mainSection #premium ul li {
+  padding-left: 0;
+  padding-bottom: 1em;
+  color: black;
+  font-size: 0.8em;
+}
+body > main #mainSection #premium footer {
+  color: #118ab2;
+  text-align: center;
+  font-weight: bold;
+}
+body > main #mainSection #pro {
+  grid-column: 3/4;
+  margin: 2.9em 2em 0 0;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  background-color: white;
+  border-left: solid 1px #118ab2;
+}
+body > main #mainSection #pro header {
+  background-color: #118ab2;
+  grid-row: 1/2;
+  width: 100%;
+  margin-top: 0;
+}
+body > main #mainSection #pro header h2 {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+body > main #mainSection #pro ul {
+  margin-top: 1em;
+  margin-left: 1em;
+  grid-row: 2/3;
+  padding-top: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+body > main #mainSection #pro ul li {
+  padding-left: 0;
+  padding-bottom: 1em;
+  color: black;
+  font-size: 0.8em;
+}
+body > main #mainSection #pro footer {
+  color: #118ab2;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,795 @@
+@import "vars-responsive";
+
+@media(max-width : 768px) // HOME PAGE
+{
+    body
+    {
+        font-family: 'JetBrains Mono', monospace;
+        width: 100vw;
+        height: 100vh;
+        background: $gradient-top-left;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+        & > header
+        {
+            width: 100vw;
+            height: 10vh;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            /*border-bottom: 0.1em solid $neonBlue;*/
+            
+            nav
+            {
+                display: none;
+                grid-column: 1 / 2;
+            
+                
+                ul
+                {
+                    margin-top: 1.2em;
+                    padding: 0;
+                    
+                    
+                    li{
+                        display: inline-block;
+                        color: white;
+                        font-size: 1em;
+                        margin-left: calc(100%/4);
+                        font-weight: bold;
+                        
+                        
+                    }
+                    
+                    span
+                    {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        
+        & > main
+        {
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 88vh;
+            
+            section:first-of-type
+            {    
+                margin: auto;
+                
+                h1
+                {
+                    color: white;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    margin: auto;
+                    padding: 0;
+                    text-align: center;
+                }
+                
+                span
+                {
+                    font-size: 2.5em;
+                }
+            }
+            
+            section:last-of-type
+            {
+                margin: auto;
+                background: $neonPurple;
+                border-radius: 0.2em;
+                height: 64vh;
+                width: 22vw;
+                
+                header
+                {
+                    margin: auto;
+                    padding-left: 0.5em;
+                    border-bottom: 0.1em solid $neonBlue;
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    
+                    h2
+                    {
+                    color: white;
+                    font-size: 1em;
+                    margin-left: 0.5em;
+                    }
+                    
+                    span:first-of-type
+                    {
+                        color: $palatinate-purple;
+                    }
+                    
+                    span:last-of-type
+                    {
+                        color: $neonBlue;
+                    }
+                    
+                    figure
+                    {
+                        grid-column: 2 / 3;
+                        margin: auto;
+                        padding: 0;
+                        
+                        img
+                        {
+                            height: 8vh;
+                            margin-top: 0.8em;
+                            margin-right: 1.5em;
+                        }
+                    }
+                }
+                
+                ul
+                {
+                    display: grid;
+                    grid-template-rows: repeat(7, 1fr);
+                    margin-top: 1em;
+                    padding: 0;
+                    list-style: none;
+                    
+                    li
+                    {
+                        margin: 0.8em;
+                        padding-left: 0;
+                        color: white;
+                        font-size: 0.8em;
+                        border-bottom: solid 0.1em $skobeloff;
+                        align-self: center;
+                        
+                    }
+                    
+                    li:last-of-type
+                    {
+                        border-bottom: none;
+                    }
+                    
+                    span
+                    {
+                        font-size: 1.3em;
+                        padding-left: 0.6em;
+                
+                    
+                    }
+                        
+                    img
+                    {
+                        height: 3vh;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width : 769px) // HOME PAGE
+{
+    body
+    {
+        font-family: 'JetBrains Mono', monospace;
+        width: 100vw;
+        height: 100vh;
+        background: $gradient-top-left;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+        & > header
+        {
+            width: 100vw;
+            height: 10vh;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            border-bottom: 0.1em solid $neonBlue;
+            
+            nav
+            {
+                grid-column: 1 / 2;
+            
+                
+                ul
+                {
+                    margin-top: 1.2em;
+                    padding: 0;
+                    
+                    
+                    li{
+                        display: inline-block;
+                        color: white;
+                        font-size: 1em;
+                        margin-left: calc(100%/4);
+                        font-weight: bold;
+                        
+                        
+                    }
+                    
+                    span
+                    {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        
+        & > main
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 88vh;
+            
+            section:first-of-type
+            {    
+                margin: auto;
+                
+                h1
+                {
+                    color: white;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    margin: auto;
+                    padding: 0;
+                }
+                
+                span
+                {
+                    font-size: 2.5em;
+                }
+            }
+            
+            section:last-of-type
+            {
+                margin: auto;
+                background: $neonPurple;
+                border-radius: 0.2em;
+                height: 64vh;
+                width: 22vw;
+                
+                header
+                {
+                    margin: auto;
+                    padding-left: 0.5em;
+                    border-bottom: 0.1em solid $neonBlue;
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    
+                    h2
+                    {
+                    color: white;
+                    font-size: 1em;
+                    margin-left: 0.5em;
+                    }
+                    
+                    span:first-of-type
+                    {
+                        color: $palatinate-purple;
+                    }
+                    
+                    span:last-of-type
+                    {
+                        color: $neonBlue;
+                    }
+                    
+                    figure
+                    {
+                        grid-column: 2 / 3;
+                        margin: auto;
+                        padding: 0;
+                        
+                        img
+                        {
+                            height: 8vh;
+                            margin-top: 0.8em;
+                            margin-right: 1.5em;
+                        }
+                    }
+                }
+                
+                ul
+                {
+                    display: grid;
+                    grid-template-rows: repeat(7, 1fr);
+                    margin-top: 1em;
+                    padding: 0;
+                    list-style: none;
+                    
+                    li
+                    {
+                        margin: 0.8em;
+                        padding-left: 0;
+                        color: white;
+                        font-size: 0.8em;
+                        border-bottom: solid 0.1em $skobeloff;
+                        align-self: center;
+                        
+                    }
+                    
+                    li:last-of-type
+                    {
+                        border-bottom: none;
+                    }
+                    
+                    span
+                    {
+                        font-size: 1.3em;
+                        padding-left: 0.6em;
+                
+                    
+                    }
+                        
+                    img
+                    {
+                        height: 3vh;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width : 768px) // PRICING PAGE
+{
+    #pricing-body
+    {
+        font-family: 'JetBrains Mono', monospace;
+        width: 100vw;
+        height: 100vh;
+        background: $gradient-bottom;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+        & > header
+        {
+            width: 100vw;
+            height: 10vh;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            border-bottom: 0.1em solid $neonBlue;
+            
+            nav
+            {
+                grid-column: 1 / 2;
+            
+                
+                ul
+                {
+                    margin-top: 1.2em;
+                    padding: 0;
+                    
+                    
+                    li{
+                        display: inline-block;
+                        color: white;
+                        font-size: 1em;
+                        margin-left: calc(100%/4);
+                        font-weight: bold;
+                        
+                        
+                    }
+                    
+                    span
+                    {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        
+        & > main
+        {
+            height: 84vh;
+            
+            header
+            {
+                margin: auto;
+                
+                h1
+                {
+                    text-align: center;
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: white;
+                    padding-top: 0.3em;
+                }
+            }
+            
+            #mainSection
+            {    
+                margin: 2em 8em 4em 8em;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                
+                #basic
+                {
+                    grid-column: 1 / 2;
+                    margin: 2.9em 0 0 2em;
+                    display: grid;
+                    grid-template-rows: 1fr 2fr ;
+                    background-color: white;
+                    border-right: solid 1px $blue;
+                    
+                    
+                    header
+                    {
+                        background-color: $blue;
+                        grid-row: 1 / 2;
+                        width: 100%;
+                        margin-top: 0;
+                        
+                        h2
+                        {
+                            color: white;
+                            font-size: 1em;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    
+                    ul
+                    {
+                        margin-top: 1em;
+                        margin-left: 1em;
+                        grid-row: 2 / 3;
+                        padding-top: 0;
+                        padding-left: 0;
+                        list-style-type: none;
+                        
+                        
+                        li
+                        {
+                            padding-left: 0;
+                            padding-bottom: 1em;
+                            color: black;
+                            font-size: 0.8em;
+                        }
+                    }
+                    
+                    footer
+                    {
+                        color: $blue;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+                
+                #premium
+                {
+                    grid-column: 2 / 3;
+                    margin: 0;
+                    display: grid;
+                    grid-template-rows: 1fr 2fr ;
+                    background-color: white;
+                    
+                    header
+                    {
+                        background-color: $blue;
+                        grid-row: 1 / 2;
+                        width: 100%;
+                        margin-top: 0;
+                        
+                        h2
+                        {
+                            color: white;
+                            font-size: 1em;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    
+                    ul
+                    {
+                        margin-top: 1em;
+                        margin-left: 1em;
+                        grid-row: 2 / 3;
+                        padding-top: 0;
+                        padding-left: 0;
+                        list-style-type: none;
+                        
+                        li
+                        {
+                            padding-left: 0;
+                            padding-bottom: 1em;
+                            color: black;
+                            font-size: 0.8em;
+                        }
+                    }
+                    
+                    footer
+                    {
+                        color: $blue;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+                
+                #pro
+                {
+                    grid-column: 3 / 4;
+                    margin: 2.9em 2em 0 0;
+                    display: grid;
+                    grid-template-rows: 1fr 2fr ;
+                    background-color: white;
+                    border-left: solid 1px $blue;
+                    
+                    header
+                    {
+                        background-color: $blue;
+                        grid-row: 1 / 2;
+                        width: 100%;
+                        margin-top: 0;
+                        
+                        h2
+                        {
+                            color: white;
+                            font-size: 1em;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    
+                    ul
+                    {
+                        margin-top: 1em;
+                        margin-left: 1em;
+                        grid-row: 2 / 3;
+                        padding-top: 0;
+                        padding-left: 0;
+                        list-style-type: none;
+                        
+                        li
+                        {
+                            padding-left: 0;
+                            padding-bottom: 1em;
+                            color: black;
+                            font-size: 0.8em;
+                        }
+                    }
+                    
+                    footer
+                    {
+                        color: $blue;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width : 769px) // PRICING PAGE
+{
+    #pricing-body
+    {
+        font-family: 'JetBrains Mono', monospace;
+        width: 100vw;
+        height: 100vh;
+        background: $gradient-bottom;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+        & > header
+        {
+            width: 100vw;
+            height: 10vh;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            border-bottom: 0.1em solid $neonBlue;
+            
+            nav
+            {
+                grid-column: 1 / 2;
+            
+                
+                ul
+                {
+                    margin-top: 1.2em;
+                    padding: 0;
+                    
+                    
+                    li{
+                        display: inline-block;
+                        color: white;
+                        font-size: 1em;
+                        margin-left: calc(100%/4);
+                        font-weight: bold;
+                        
+                        
+                    }
+                    
+                    span
+                    {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        
+        & > main
+        {
+            height: 84vh;
+            
+            header
+            {
+                margin: auto;
+                
+                h1
+                {
+                    text-align: center;
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: white;
+                    padding-top: 0.3em;
+                }
+            }
+            
+            #mainSection
+            {    
+                margin: 2em 8em 4em 8em;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                
+                #basic
+                {
+                    grid-column: 1 / 2;
+                    margin: 2.9em 0 0 2em;
+                    display: grid;
+                    grid-template-rows: 1fr 2fr ;
+                    background-color: white;
+                    border-right: solid 1px $blue;
+                    
+                    
+                    header
+                    {
+                        background-color: $blue;
+                        grid-row: 1 / 2;
+                        width: 100%;
+                        margin-top: 0;
+                        
+                        h2
+                        {
+                            color: white;
+                            font-size: 1em;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    
+                    ul
+                    {
+                        margin-top: 1em;
+                        margin-left: 1em;
+                        grid-row: 2 / 3;
+                        padding-top: 0;
+                        padding-left: 0;
+                        list-style-type: none;
+                        
+                        
+                        li
+                        {
+                            padding-left: 0;
+                            padding-bottom: 1em;
+                            color: black;
+                            font-size: 0.8em;
+                        }
+                    }
+                    
+                    footer
+                    {
+                        color: $blue;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+                
+                #premium
+                {
+                    grid-column: 2 / 3;
+                    margin: 0;
+                    display: grid;
+                    grid-template-rows: 1fr 2fr ;
+                    background-color: white;
+                    
+                    header
+                    {
+                        background-color: $blue;
+                        grid-row: 1 / 2;
+                        width: 100%;
+                        margin-top: 0;
+                        
+                        h2
+                        {
+                            color: white;
+                            font-size: 1em;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    
+                    ul
+                    {
+                        margin-top: 1em;
+                        margin-left: 1em;
+                        grid-row: 2 / 3;
+                        padding-top: 0;
+                        padding-left: 0;
+                        list-style-type: none;
+                        
+                        li
+                        {
+                            padding-left: 0;
+                            padding-bottom: 1em;
+                            color: black;
+                            font-size: 0.8em;
+                        }
+                    }
+                    
+                    footer
+                    {
+                        color: $blue;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+                
+                #pro
+                {
+                    grid-column: 3 / 4;
+                    margin: 2.9em 2em 0 0;
+                    display: grid;
+                    grid-template-rows: 1fr 2fr ;
+                    background-color: white;
+                    border-left: solid 1px $blue;
+                    
+                    header
+                    {
+                        background-color: $blue;
+                        grid-row: 1 / 2;
+                        width: 100%;
+                        margin-top: 0;
+                        
+                        h2
+                        {
+                            color: white;
+                            font-size: 1em;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    
+                    ul
+                    {
+                        margin-top: 1em;
+                        margin-left: 1em;
+                        grid-row: 2 / 3;
+                        padding-top: 0;
+                        padding-left: 0;
+                        list-style-type: none;
+                        
+                        li
+                        {
+                            padding-left: 0;
+                            padding-bottom: 1em;
+                            color: black;
+                            font-size: 0.8em;
+                        }
+                    }
+                    
+                    footer
+                    {
+                        color: $blue;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
